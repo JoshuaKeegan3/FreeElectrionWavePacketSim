@@ -34,7 +34,6 @@ function update(){
 
   try{
     temp = input.value().split(" ")
-    console.log(temp)
     for (let j=-width/2,ji=0; j < width/2; j++,ji++){
       curr[ji] = 0
       for (let i=0; i < temp.length; i++){
@@ -43,6 +42,5 @@ function update(){
       curr[ji] = curr[ji] / temp.length * height/3
     }
   }catch{
-    console.log("err")
   }
 }
