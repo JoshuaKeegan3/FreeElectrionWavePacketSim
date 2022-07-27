@@ -25,7 +25,7 @@ function draw() {
 
   beginShape();
   for (let i = 0; i < width; i++){
-    vertex(i, curr[i])
+    vertex(i, -curr[i])
   }
   endShape();
 }
