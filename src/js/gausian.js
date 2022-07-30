@@ -21,16 +21,17 @@ function setup() {
 }
 
 function draw() {
+  sig = slider.value()
   curr = []
   background(255)
   stroke(0)
-  line(width/2, 0, width/2, height)
+  line(x0, 0, x0, height)
   line(0,height/2, width, height/2)
   translate(0,height/2)
   
-  text("0", width/2, 0)
-  text("1", width/2, -height/3)
-  text("-1", width/2, height/3)
+  text("0", x0, 0)
+  text("1", x0, -height/3)
+  text("-1", x0, height/3)
 
   stroke(255,0,0)
 
