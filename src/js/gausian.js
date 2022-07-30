@@ -14,18 +14,25 @@ let curr = []
 function setup() {
   createCanvas(600, 400);
   slider = createSlider(5, 100, 5);
-  stroke(255)
+  stroke(0)
   strokeWeight(1)
-  background(0)
+  background(255)
   noFill()
-
 }
 
 function draw() {
   curr = []
-  background(0)
-  sig = slider.value()
-  translate(0,200)
+  background(255)
+  stroke(0)
+  line(width/2, 0, width/2, height)
+  line(0,height/2, width, height/2)
+  translate(0,height/2)
+  
+  text("0", width/2, 0)
+  text("1", width/2, -height/3)
+  text("-1", width/2, height/3)
+
+  stroke(255,0,0)
 
   Psi = Gauss_Packet(x, x0, sig, k0)
   beginShape();
